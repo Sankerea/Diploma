@@ -28,7 +28,7 @@ export default class HomePage extends Component {
           }
           return (
             <>
-              <h2 className="text-center">Task Manager App</h2>
+              <h2 className="text-center">Өдөр тутмын үйл ажиллагааг дэмжих систем</h2>
               <NavTabs />
             </>
           );

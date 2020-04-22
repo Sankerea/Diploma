@@ -8,6 +8,7 @@ import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
+
 //==================
 import Profile from "../../Pages/Tabs/Profile";
 import Tasks from "../../Pages/Tabs/Tasks";
@@ -58,7 +59,7 @@ function FullWidthTabs() {
           <Tab
             icon={
               <>
-                <Assignment /> <span>My Tasks</span>
+                <Assignment /> <span>Миний Даалгаварууд</span>
               </>
             }
             aria-label="Search"
@@ -66,7 +67,7 @@ function FullWidthTabs() {
           <Tab
             icon={
               <>
-                <PersonPinIcon /> <span>Profile</span>
+                <PersonPinIcon /> <span>Танилцуулга</span>
               </>
             }
             aria-label="Person"

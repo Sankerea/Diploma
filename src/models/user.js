@@ -19,7 +19,7 @@ const userSchema = new mongoose.Schema(
       lowercase: true,
       validate(value) {
         if (!validator.isEmail(value)) {
-          throw new Error("Email is invalid");
+          throw new Error("И-мэйл буруу");
         }
       }
     },
@@ -30,7 +30,7 @@ const userSchema = new mongoose.Schema(
       trim: true,
       validate(value) {
         if (value.toLowerCase().includes("password")) {
-          throw new Error('Password can not contain "password"');
+          throw new Error('Нууц үгэнд "password" байж болохгүй"');
         }
       }
     },
@@ -39,7 +39,7 @@ const userSchema = new mongoose.Schema(
       default: 0,
       validate(value) {
         if (value < 0) {
-          throw new Error("Age must be a positive number");
+          throw new Error("Нас нь эерэг тоо байх ёстой");
         }
       }
     },

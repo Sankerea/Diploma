@@ -30,6 +30,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 app.listen(port, () => {
-  console.log(`Server is up on port ${port}`);
-  console.log("--------------------------");
+  console.log(`Сервэр нь: ${port} Port дээр явагдаж байна`);
+  console.log("--------------------------")
+  console.log(' Баярлалаа ');;
 });

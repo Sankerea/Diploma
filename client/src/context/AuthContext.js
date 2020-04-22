@@ -58,7 +58,7 @@ class AuthProvider extends Component {
       })
       .catch((err) => {
         console.error(err);
-        this.setState({ error: "Invalid email or password" });
+        this.setState({ error: "Мэйл эсвэл Нууц үг буруу" });
       });
   };
 
@@ -75,7 +75,7 @@ class AuthProvider extends Component {
       })
       .catch((err) => {
         console.log(err);
-        this.setState({ error: "Invalid Data" });
+        this.setState({ error: "Мэдээлэл байхгүй" });
       });
   };
 

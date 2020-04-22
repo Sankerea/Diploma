@@ -28,19 +28,19 @@ class UserInfo extends React.Component {
     return (
       <>
         <Button variant="primary" onClick={this.handleShow}>
-          Update my info
+          Мэдээлэл шинэчлэх
         </Button>
 
         <Modal show={this.state.show} onHide={this.handleClose}>
           <Modal.Header closeButton>
-            <Modal.Title>Update User info</Modal.Title>
+            <Modal.Title>Мэдээлэл шинэчлэх</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <Form autoComplete="off" onSubmit={this.props.submitHandler}>
               {/* //! name */}
               <Form.Group as={Row}>
                 <Form.Label column sm={2}>
-                  Name
+                  Нэр
                 </Form.Label>
                 <Col sm={10}>
                   <Form.Control
@@ -54,7 +54,7 @@ class UserInfo extends React.Component {
               {/* //! email */}
               <Form.Group as={Row}>
                 <Form.Label column sm={2}>
-                  Email
+                  Мэйл
                 </Form.Label>
                 <Col sm={10}>
                   <Form.Control
@@ -68,7 +68,7 @@ class UserInfo extends React.Component {
               {/* //! age */}
               <Form.Group as={Row}>
                 <Form.Label column sm={2}>
-                  Age
+                  Нас
                 </Form.Label>
                 <Col sm={10}>
                   <Form.Control
@@ -81,10 +81,10 @@ class UserInfo extends React.Component {
               </Form.Group>
               <Modal.Footer>
                 <Button variant="secondary" onClick={this.handleClose}>
-                  Close
+                  Хаах
                 </Button>
                 <Button type="submit" onClick={this.handleClose}>
-                  Save my changes
+                  Хадгалах
                 </Button>
               </Modal.Footer>
             </Form>

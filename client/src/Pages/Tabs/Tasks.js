@@ -6,9 +6,9 @@ import MaterialTable from "material-table";
 class MaterialTableDemo extends React.Component {
   state = {
     columns: [
-      { title: "Description", field: "description" },
+      { title: "Тайлбар", field: "description" },
       {
-        title: "Date",
+        title: "Огноо",
         field: "createdAt",
         editable: "never",
         render: (rowData) => {
@@ -20,7 +20,7 @@ class MaterialTableDemo extends React.Component {
         }
       },
       {
-        title: "Status",
+        title: "Байдал",
         field: "completed",
         render: (rowData) => {
           return rowData.completed === true ? "Completed" : "Ongoing";

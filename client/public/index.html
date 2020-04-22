@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR3VQJn_TQX7dcVapCmKR3P41XS3rQVuqyqUsaAxEUXGCGdZKpf&usqp=CAU" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <!--
@@ -18,11 +18,24 @@
     />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
-    <title>React App</title>
+    <title>Diploma V2 by Dulguun</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="vantajs"></div>
     <div id="root"></div>
+    <script>
+      VANTA.BIRDS({
+        el: "#vantajs",
+        /* more options (Uncomment) */
+        //birdSize: 1.50,
+        //wingSpan: 21.00,
+        //speedLimit: 4.00,
+        //separation: 32.00,
+        //alignment: 33.00,
+        //cohesion: 33.00,
+        //quantity: 2.00
+      });
+      </script>
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -41,5 +54,7 @@
       integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js"></script>
+<script src="https://www.vantajs.com/dist/vanta.birds.min.js"></script>
   </body>
 </html>

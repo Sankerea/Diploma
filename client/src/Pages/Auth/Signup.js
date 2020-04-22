@@ -19,9 +19,9 @@ import ErrorMsg from "../../components/MUI/ErrorMsg";
 function MadeWithLove() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
-      {"Built with love by "}
-      <a rel="noopener noreferrer" href="https://linkedin.com/in/mostafa3li/" target="_blank">
-        Mostafa Ali
+      {"Built by Dulguun "}
+      <a rel="Contact " href=" https://www.facebook.com/APHAAXAN" target="_blank">
+        Facebook
       </a>
     </Typography>
   );
@@ -77,7 +77,7 @@ export default function SignIn() {
                 <LockOutlinedIcon />
               </Avatar>
               <Typography component="h1" variant="h5">
-                Sign up
+                Бүртгүүлэх
               </Typography>
               <form className={classes.form} noValidate autoComplete="off" onSubmit={submitHandler}>
                 <Grid container spacing={2}>
@@ -128,12 +128,12 @@ export default function SignIn() {
                   color="primary"
                   className={classes.submit}
                 >
-                  Sign Up
+                  Бүртгүүлэх
                 </Button>
                 <Grid container justify="flex-end">
                   <Grid item>
                     <Link to="/login" variant="body2">
-                      Already have an account? Sign in
+                      Аль хэдийн бүртгүүлсэн үү?, Нэвтрэх
                     </Link>
                   </Grid>
                 </Grid>
@@ -142,8 +142,8 @@ export default function SignIn() {
             <Box mt={5}>
               <MadeWithLove />
             </Box>
-            {error === "Invalid Data" ? (
-              <ErrorMsg message="please provide a valid email & Password at least 7 characters" />
+            {error === "Мэдээлэл байхгүй" ? (
+              <ErrorMsg message="Таны мэдээлэл байхгүй байна" />
             ) : (
               ""
             )}

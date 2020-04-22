@@ -5,14 +5,13 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 const sendWelcomeEmail = (email, name) => {
   sgMail.send({
     to: email,
-    from: "Mostapha.a.aly@gmail.com",
-    subject: "Thanks for joining in",
-    text: `Welcome to my Task manager app, ${name}.
-    I hope you like it.
+    from: "doko.0224@gmail.com",
+    subject: "Биднийг дэмжиж байгаад баярлалаа",
+    text: `Системд тавтай морилно уу ${name}.
     
-    regards 
-    Mostafa Ali
-    linkedin.com/in/mostafa3li/ 
+    
+    Хүндэтгэсэн
+    Дөлгөөн
     `
   });
 };
@@ -20,9 +19,9 @@ const sendWelcomeEmail = (email, name) => {
 const sendCancelationEmail = (email, name) => {
   sgMail.send({
     to: email,
-    from: "Mostapha.a.aly@gmail.com",
-    subject: "Sorry to see you go",
-    text: `Goodbye, ${name}.`
+    from: "doko.0224@gmail.com",
+    subject: "Баяртай",
+    text: `Баяртай, ${name}.`
   });
 };
 

@@ -17,9 +17,9 @@ import ErrorMsg from "../../components/MUI/ErrorMsg";
 function MadeWithLove() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
-      {"Built with love by "}
-      <a rel="noopener noreferrer" href="https://linkedin.com/in/mostafa3li/" target="_blank">
-        Mostafa Ali
+      {"Built by Dulguun "}
+      <a rel="Contact" href="https://www.facebook.com/APHAAXAN" target="blank">
+        Facebook
       </a>
     </Typography>
   );
@@ -76,7 +76,7 @@ export default function SignIn() {
                 <LockOutlinedIcon />
               </Avatar>
               <Typography component="h1" variant="h5">
-                Sign in
+                Нэвтрэх
               </Typography>
               <form className={classes.form} noValidate autoComplete="off" onSubmit={submitHandler}>
                 <TextField
@@ -111,17 +111,17 @@ export default function SignIn() {
                   color="primary"
                   className={classes.submit}
                 >
-                  Sign In
+                  Нэвтрэх
                 </Button>
                 <Grid container justify="flex-end">
-                  {/* <Grid item xs>
+                  { <Grid item xs>
                     <Link to="/login" variant="body2">
-                      Forgot password?
+                      Нууц үгээ мартсан уу?
                     </Link>
-                  </Grid> */}
+                  </Grid> }
                   <Grid item>
                     <Link to="/signup" variant="body2">
-                      {"Don't have an account? Sign Up"}
+                      {"Бүртгэл байхгүй юу?, Бүртгүүлэх"}
                     </Link>
                   </Grid>
                 </Grid>
@@ -130,8 +130,8 @@ export default function SignIn() {
             <Box mt={5}>
               <MadeWithLove />
             </Box>
-            {error === "Invalid email or password" ? (
-              <ErrorMsg message="Invalid Email or Password!" />
+            {error === "Мэйл эсвэл Нууц үг буруу" ? (
+              <ErrorMsg message="Мэйл эсвэл Нууц үг буруу байна" />
             ) : (
               ""
             )}

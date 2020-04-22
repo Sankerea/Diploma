@@ -26,19 +26,19 @@ class UserImage extends React.Component {
     return (
       <>
         <Button variant="primary" onClick={this.handleShow}>
-          Upload new Image
+          Шинээр зураг оруулах
         </Button>
 
         <Modal show={this.state.show} onHide={this.handleClose}>
           <Modal.Header closeButton>
-            <Modal.Title>Upload new Image</Modal.Title>
+            <Modal.Title>Шинээр зураг оруулах</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <Form autoComplete="off" onSubmit={this.props.submitHandler}>
               {/* //! user Image */}
               <Form.Group as={Row}>
                 <Form.Label column sm={4}>
-                  Upload Image
+                  Зураг оруулах
                 </Form.Label>
                 <Col sm={8}>
                   <Form.Control
@@ -51,10 +51,10 @@ class UserImage extends React.Component {
               </Form.Group>
               <Modal.Footer>
                 <Button variant="secondary" onClick={this.handleClose}>
-                  Close
+                  Хаах
                 </Button>
                 <Button type="submit" onClick={this.handleClose}>
-                  Save my changes
+                  Хадгалах
                 </Button>
               </Modal.Footer>
             </Form>

@@ -65,7 +65,7 @@ router.get("/tasks/:id", auth, async (req, res) => {
   try {
     const task = await Task.findOne({ _id, owner: req.user._id });
     if (!task) {
-      return res.status(404).send("Task not found or you're not authenticated");
+      return res.status(404).send("Даалгавар олдсонгүй эсвэл та баталгаажуулаагүй байна");
     }
     res.send(task);
   } catch (error) {
@@ -80,7 +80,7 @@ router.patch("/tasks/:id", auth, async (req, res) => {
   const allowedUpdates = ["description", "completed"];
   const isValidOperation = updates.every((update) => allowedUpdates.includes(update));
   if (!isValidOperation) {
-    return res.status(400).send("ERROR: invalid operation");
+    return res.status(400).send("АЛДАА: буруу ажиллагаа байна");
   }
   //*
 
@@ -89,7 +89,7 @@ router.patch("/tasks/:id", auth, async (req, res) => {
     //* this logic for future use of middleware on updating tasks
     const task = await Task.findOne({ _id, owner: req.user._id });
     if (!task) {
-      return res.status(404).send("task not found or You're not authenticated");
+      return res.status(404).send("Даалгавар олдсонгүй эсвэл та баталгаажуулаагүй байна");
     }
     updates.forEach((update) => (task[update] = req.body[update]));
     await task.save();
@@ -106,7 +106,7 @@ router.delete("/tasks/:id", auth, async (req, res) => {
   try {
     const task = await Task.findOneAndDelete({ _id, owner: req.user._id });
     if (!task) {
-      res.status(404).send("Task not founded or You're not authenticated");
+      res.status(404).send("Даалгавар нь байгуулагдаагүй эсвэл та баталгаажулаагүй байна");
     }
     res.send(task);
   } catch (error) {

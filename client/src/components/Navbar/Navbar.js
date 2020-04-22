@@ -17,7 +17,7 @@ const NavBar = () => {
               <Toolbar className={classes.nav}>
                 <div>
                   <Link to="/" className={classes.logo}>
-                    <Typography variant="h6">Task Manager App</Typography>
+                    <Typography variant="h6">Өдөр тутмын үйл ажиллагааг дэмжих систем</Typography>
                   </Link>
                 </div>
                 <div>

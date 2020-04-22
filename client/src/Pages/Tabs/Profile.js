@@ -10,7 +10,7 @@ import UserImage from "../../components/Modals/UserImage";
 
 class PaperSheet extends React.Component {
   state = {
-    userImage: "https://i.pravatar.cc/250",
+    userImage: "https://media.istockphoto.com/vectors/avatar-flat-style-vector-icon-user-sign-icon-human-avatar-black-icon-vector-id1198250526",
     updatedImage: null,
     name: "",
     updatedName: null,
@@ -135,9 +135,7 @@ class PaperSheet extends React.Component {
         {({ error, user }) => {
           let joinedAt;
           if (user) {
-            // name = user.name;
-            // email = user.email;
-            // age = user.age;
+          
             const date = new Date(user.createdAt);
             joinedAt = date.toLocaleString();
           }
@@ -147,7 +145,7 @@ class PaperSheet extends React.Component {
             <section>
               <Paper className={classes.profile}>
                 <Typography variant="h5" component="h3">
-                  My Profile
+                Миний намтар
                 </Typography>
                 <hr />
                 <div className="media">
@@ -164,15 +162,15 @@ class PaperSheet extends React.Component {
                     <h5 className="mt-0">{name}</h5>
                     <hr />
                     <h6 className="mt-0">
-                      Email: <strong>{email}</strong>
+                      Мэйл: <strong>{email}</strong>
                     </h6>
                     <hr />
                     <h6 className="mt-0">
-                      Age: <strong>{age}</strong>
+                      Нас: <strong>{age}</strong>
                     </h6>
                     <hr />
                     <h6 className="mt-0">
-                      Joined at: <strong>{joinedAt}</strong>
+                      Элссэн цаг: <strong>{joinedAt}</strong>
                     </h6>
                     <hr />
                     <div className="d-flex justify-content-around">
@@ -190,13 +188,10 @@ class PaperSheet extends React.Component {
                 </div>
                 <hr />
                 <Typography component="p">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore modi quasi
-                  cupiditate vero porro dolorum nobis eaque aliquam perferendis velit quam, magni
-                  ipsum sequi numquam aperiam odio ab sapiente reiciendis. Lorem ipsum dolor sit
-                  amet consectetur adipisicing elit. Iusto quibusdam nemo, cum officia corrupti
-                  expedita cumque similique suscipit minima consequatur quae, alias enim dolorem
-                  labore provident.
-                </Typography>
+                Миний бие {}  
+                   {name} {}
+                   {age} настай.
+                          </Typography>
               </Paper>
             </section>
           );
